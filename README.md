@@ -6,3 +6,8 @@ PuzzlePicture
 ![image](https://github.com/TangledHusky/PuzzlePicture/blob/master/Pic/pic1.png)
 ![image](https://github.com/TangledHusky/PuzzlePicture/blob/master/Pic/pic2.png)
 
+下载打开 PuzzlePicture.xcworkspace 即可。
+
+
+
+
