@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  PuzzlePicture
+//
+//  Created by 李亚军 on 16/6/13.
+//  Copyright © 2016年 zyyj. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "PublicMethod.h"
+#import "ImageScale.h"
+#import "PuzzleInstance.h"
+#import "MJExtension.h"
+#import "UIButton+Extension.h"
+#import "UIColor+Hex.h"
+
+
+
+//应用名称
+#define APPName [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]
+
+
+//屏幕尺寸
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+//打印日志
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+
+//主界面，侧边栏向右滑出距离
+#define kLeftViewSlideDepth 130.0f
+
+//颜色---从rgb转换
+#define ColorWith(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//随机色
+#define RandomColor ColorWith(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+
+
+#endif /* PrefixHeader_pch */
